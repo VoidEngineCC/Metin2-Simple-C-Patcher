@@ -23,4 +23,7 @@ A simple and efficient patcher coded specifically for two of my oldest projects:
    private const string ChangelogUrl = "https://eldria2.mt2.ro/updates/changelog.php";
    private const string GraphicsUrl = "https://eldria2.mt2.ro/updates/graphics.zip";```
 
-3. Compile and deploy the patcher for your users.</center> 
+3. Compile and deploy the patcher for your users.
+
+ ## ⚠️ Note :
+ The Graphics System is a private project of mine and it's not included! you can just remove it, I was lazy to do.</center> 
