@@ -26,4 +26,5 @@ A simple and efficient patcher coded specifically for two of my oldest projects:
 3. Compile and deploy the patcher for your users.
 
  ## ⚠️ Note :
- The Graphics System is a private project of mine and it's not included! you can just remove it, I was lazy to do.</center> 
+ The Graphics System is a private project of mine and it's not included! you can just remove it, I was lazy to do.
+ And the image in the patcher is an url and can be changed just read the code</center> 
