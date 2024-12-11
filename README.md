@@ -1,4 +1,4 @@
-<center> # Metin2 Patcher for Eldria2 & Valkyrie2  
+<center> ## Metin2 Patcher for Eldria2 & Valkyrie2  
 
 A simple and efficient patcher coded specifically for two of my oldest projects: **Eldria2** and **Valkyrie2**. This patcher features a built-in **Language Changer** for the game client, providing players with a seamless way to switch between languages.  
 
