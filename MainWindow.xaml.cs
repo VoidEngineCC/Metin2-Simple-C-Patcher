@@ -23,12 +23,12 @@ namespace Eldria_Patcher2
         private const string GraphicsUrl = "https://eldria2.mt2.ro/updates/graphics.zip";
         private readonly string[] filesToCheck =
         {
-            "d3d8.dll",
-            "d3d9.dll",
-            "d3dx9_26.dll",
-            "ijl15.dll",
-            "m2donusturur.ini",
-            "m2graphic.ini"
+            "reformed.dll",
+            "newrtx.dll",
+            "voidgraphics.dll",
+            "metin2.dll",
+            "rtxsettings.ini",
+            "m2settings.ini"
         };
 
         private DispatcherTimer graphicsStatusTimer; // Timer for updating graphics status
