@@ -5,7 +5,7 @@ A simple and efficient patcher coded specifically for two of my oldest projects:
 ## 📸 Screenshots  
 
 **Patcher Interface**  
-![Patcher](http://i.epvpimg.com/NgYHeab.png)  
+![Patcher](http://i.epvpimg.com/xZ59cab.png)  
 
 **Language Changer**  
 ![Language Changer](http://i.epvpimg.com/OLKSaab.png)  
