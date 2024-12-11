@@ -1,0 +1,114 @@
+﻿<Window x:Class="Eldria_Patcher2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Eldria Patcher" Height="598.375" Width="1054" Background="Transparent" ResizeMode="NoResize" WindowStyle="SingleBorderWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Background Image -->
+        <Image Grid.Row="0" Source="bg.jpg" Stretch="UniformToFill" Grid.RowSpan="2" />
+
+        <!-- Main Grid Content -->
+        <Grid Grid.Row="1" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Progress Bar -->
+            <StackPanel Grid.Row="1" Margin="0,0,0,20">
+                <TextBlock Text="" Foreground="#FFFFFF" FontSize="24" Margin="0,0,0,10" Width="433" />
+                <ProgressBar Name="ProgressBar" Height="20" Minimum="0" Maximum="100" Value="0" Foreground="#300001" Background="#FFFFFF" BorderThickness="0" />
+            </StackPanel>
+
+            <!-- Action Buttons and ComboBox -->
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <Button Name="StartButton" Content="Start Game" Width="150" Height="50" Margin="10" FontSize="24" Foreground="#000000" Background="#545454" BorderThickness="0" Click="StartButton_Click" />
+            </StackPanel>
+
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="723,10,-14,-14" Height="94" Width="299" Grid.Row="2">
+                <Button Width="200" Height="30" Margin="0,0,0,10" Foreground="#FFFFFF" Background="#545454" Click="ChangeLanguage_Click">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Text="Change Language" VerticalAlignment="Center" />
+                        <TextBlock FontSize="10" Foreground="Gray">
+                            <Run Text=" © " />
+                            <Run Text="Eldria2" />
+                        </TextBlock>
+                    </StackPanel>
+                </Button>
+                <ComboBox x:Name="languageComboBox" Width="200" Margin="0,0,0,10">
+                    <ComboBoxItem Content="English" />
+                    <ComboBoxItem Content="Magyar" />
+                    <ComboBoxItem Content="Cestina" />
+                    <ComboBoxItem Content="Deutsch" />
+                    <ComboBoxItem Content="Dansk" />
+                    <ComboBoxItem Content="Espanol" />
+                    <ComboBoxItem Content="Français" />
+                    <ComboBoxItem Content="Ellinika" />
+                    <ComboBoxItem Content="Italiano" />
+                    <ComboBoxItem Content="Holland" />
+                    <ComboBoxItem Content="Polski" />
+                    <ComboBoxItem Content="Portugues" />
+                    <ComboBoxItem Content="Romana" />
+                    <ComboBoxItem Content="Russkiy" />
+                    <ComboBoxItem Content="Türkçe" />
+                </ComboBox>
+            </StackPanel>
+
+            <!-- Additional Canvas Elements -->
+            <Canvas>
+                <!-- Patch Notes Box -->
+                <WebBrowser Name="PatchNotesWebBrowser"
+                            Canvas.Left="748" Canvas.Top="-268" Height="258" Width="266" HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+                <!-- Image Slider -->
+                <Image Name="ImageSlider"
+                       Canvas.Left="-16" Canvas.Top="-266" Height="254" Width="757"
+                       Stretch="UniformToFill" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+                <!-- Better Graphics Button -->
+                <Button Name="NewButton" Content="Better Graphics" Width="150" Height="25" 
+                        Canvas.Left="864" Canvas.Top="-2" 
+                        FontSize="12" Foreground="#000000" 
+                        Background="#545454" BorderThickness="0" 
+                        Click="NewButton_Click" 
+                        HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+                <!-- Graphics Mode Status TextBlock -->
+                <TextBlock Name="GraphicsModeStatusTextBlock" Width="22" Height="26" 
+                           Canvas.Left="839" Canvas.Top="2" 
+                           FontSize="12" HorizontalAlignment="Left" 
+                           VerticalAlignment="Top"/>
+
+                <!-- Small Progress Bar -->
+                <ProgressBar Name="SmallProgressBar" Width="150" Height="10" 
+                             Canvas.Left="864" Canvas.Top="28" 
+                             Minimum="0" Maximum="100" 
+                             Value="0" Foreground="#300001" 
+                             Background="#FFFFFF" BorderThickness="0" 
+                             HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Canvas>
+
+            <TextBlock 
+                VerticalAlignment="Bottom" 
+                HorizontalAlignment="Left" 
+                FontSize="14" 
+                Foreground="#FFFFFF" 
+                Margin="739,0,0,70" Grid.RowSpan="2">
+                <Run Language="fr-fr" Text="Better Graphics:"/>
+            </TextBlock>
+            <TextBlock x:Name="StatusTextBlock"
+                VerticalAlignment="Bottom" 
+                HorizontalAlignment="Left" 
+                FontSize="14" 
+                Foreground="#FFFFFF" 
+                Margin="0,0,0,51" Grid.RowSpan="2">
+                <Run Language="fr-fr" Text=""/>
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Window>
